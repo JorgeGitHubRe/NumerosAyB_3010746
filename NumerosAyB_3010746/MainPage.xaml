@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="NumerosAyB_3010746.MainPage">
+
+    <ScrollView>
+        <VerticalStackLayout
+        Spacing="35"
+        Padding="30,0"
+        VerticalOptions="Center">
+
+            <Image
+            Source="expresion.png"
+            HeightRequest="200"
+            WidthRequest="350"
+            HorizontalOptions="Center" />
+
+            <Label Text="Ingrese el numero A"
+               FontSize="15"/>
+            <Entry x:Name="NA"
+               Placeholder="Numero A"
+               Keyboard="Numeric"/>
+
+            <Label Text="Ingrese el numero B"
+               FontSize="15"/>
+            <Entry x:Name="NB"
+               Placeholder="Numero B"
+               Keyboard="Numeric"/>
+
+            <Label x:Name="Re"
+              Text="El resultado es:"
+               FontSize="18"
+               FontAttributes="Bold"
+               TextColor="MediumBlue"/>
+
+
+            <Button BackgroundColor="White"
+            BorderColor="MediumBlue"
+            BorderWidth="3"
+            Text="Calcular" 
+            Clicked="Button_Clicked"/>
+
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>
